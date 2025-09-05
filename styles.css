@@ -1,0 +1,22 @@
+#calculator-body {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 350px;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+#display {
+    border: 2px solid black;
+    height: 125px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#buttons {
+    border: 2px solid black;
+    flex: 1;
+    width: 100%;
+    padding: 15px;
+}

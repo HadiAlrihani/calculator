@@ -15,9 +15,9 @@ function divide(num1, num2) {
     return num1 / num2;
 }
 
-let operand1
-let operand2
-let operator
+var operand1;
+var operand2;
+var operator;
 
 function operate(operand1, operator, operand2) {
     let result
