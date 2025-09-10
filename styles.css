@@ -45,18 +45,18 @@
     align-items: center;
     font-size: large;
     background-color: #505050;
+    font-size: xx-large;
 
 }
 
 #divide, #multiply, #add, #subtract {
     width: 90px;
     margin-left: 5px;
-    background-color: rgb(214, 164, 0);
 }
 
-#equals {
+.operator {
     background-color: rgb(214, 164, 0);
-
+    font-size: xx-large;
 }
 
 #ac-button {
