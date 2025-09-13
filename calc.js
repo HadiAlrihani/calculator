@@ -35,5 +35,32 @@ function operate(operand1, operator, operand2) {
     }
 
     return result;
-
 }
+
+const display = document.querySelector('#display');
+const displayButtons = document.querySelectorAll('.number-button');
+
+displayButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const item = button.textContent.trim();
+        const current = display.textContent.trim();
+
+        if (current.length < 18) {
+            if (current === '0') {
+                if (item != '.') {
+                display.textContent = item; // replace starting "0"
+                } else {
+                    display.textContent += item;
+                }
+            } else {
+                display.textContent = current + item; // append
+            }   
+        }
+    });
+});
+
+const acButton = document.querySelector('#ac-button');
+acButton.addEventListener('click', function() {
+    display.textContent = "0";
+})
+
